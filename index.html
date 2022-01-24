@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HISTORIAS CARGADAS DE MISTERIO, ¿Te atreves a saber más?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 32px;
+    }
+    img{
+            width: 100%;
+            height: auto;
+    }
+    a{
+        font-family: var(--bebas);
+        text-decoration: none;
+        text-transform: uppercase;
+        color:var(--lila);
+
+    }
+    :root{
+            --lila: #CFA9E6;
+            --violeta: #AE8DC2;
+            --lavanda: #8B729C;
+            --morado: #52435C;
+            --bellmt: 'Bell MT', serif;
+            --bebas: 'Bebas Neue', sans-serif;
+            --roboto: 'Roboto', sans-serif;
+    }
+    .container{
+        padding: 0.5em 0.5em 0.5em; /*Margen blanco*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    body>header{
+        padding: 15px, 0;
+        display: flex;
+        align-items: center;
+        height: 20vh;
+        background-color: var(--morado);
+    }
+    h1{
+        font-size: 1.2em;
+        font-family: var(--bebas), sans-serif;
+        color:var(--lila);
+        font-weight: var(--negrita);
+    }
+    h2{
+        font-size: 0.8em;
+        font-family:var(--roboto), sans-serif;
+        color: var(--lila); /*Subtítulo*/
+    }
+    h3{
+        font-family:var(--bellmt), serif;
+        color:white;
+        margin: 10px;
+    }
+    nav a{
+        font-size: 0.75em; /*Navegador, Bebas*/
+        padding: 10 10 10px;
+        
+}
+    section:first-child{
+        height: 100%;
+        background-color: var(--violeta);
+        color:white;
+    }
+    section:first-child .container{
+        display: flex;
+        flex-wrap: wrap;  /*Lo "enrolla" como un "kebab", es decir, cuando corta en la pantalla, sigue debajo*/
+    }
+    .cover{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        max-width: 160px; /*Tamaño imagen*/
+        height: 300px;
+        padding: 0.5em;
+        margin: 0.3em;
+        background-color: var(--lila); /*Marco de imagen*/
+    }
+    .cover .cover_img{
+            width: 100%;
+            height: auto;
+        max-height: 200px;
+        background: var(--violeta);
+        flex-grow: 1;
+        }
+    .cover .cover_img img{
+        object-fit: cover;
+        flex-grow: 1;
+        }
+    .cover header{
+        background-color:var(--violeta); /*Pie de marco de imagen*/
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+    .cover h3{
+        font-family: var(--roboto);
+        width: 100%;
+        font-size: 0.3em;
+        justify-content: center;
+        text-align: center;
+        color: var(--morado); /*Debajo de la imagen, títulos libros*/
+        }
+
+    /*CARD AUTORES*/
+    .card_autores{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin: 0.2em;
+            padding: 0;
+            align-items: center;
+            width: 200px;
+        }
+        .autores_img{
+            width: 250px;
+            height: 250px;
+        }
+        .autores_img img{
+            border-radius: 250px;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .card_autores header{
+            margin: 0.45em 0 0 0;
+            text-align: center;
+        }
+    section:last-child{
+        height: 100%; /*2º fondo*/
+        background-color: var(--lavanda); /*fondo 2ª viñeta*/
+        color: var(--morado);
+    }
+    footer{
+        height: 30vh; /*Ancho del Footer, xxss*/
+        background-color: var(--morado);
+        color: var(--lila);
+    }
+    footer .container{
+        display: flex;
+    }
+
+    footer p{
+        width: 17%;
+    }
+
+    footer p:last-child{
+        width: 17%;
+        margin-left: 25%;
+    }
+    footer p a{
+        font-family: var(--bebas);
+        text-transform: capitalize;
+        font-size: 0.75em;
+        align-items: flex-end;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <hgroup>
+                <h1>MISTERIO Y SUSPENSE, ¿Te atreves a saber más?</h1>
+                <h2>Historias que te mantendrán en vilo</h2>
+            </hgroup>
+            <nav>
+                <a href="#Portadas">Libros</a>
+                <a href="#Autores">Autores</a>
+                <a href="#xxss">xxss</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+            <section id="#Portadas">
+                <h3>Libros que arrasan</h3>
+
+                <div class="container">
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="llocweb/img/Asesinato en el Comité Central.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Asesinato en el Comité Central</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="llocweb/img/Asesinos sin rostro.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Asesinos sin rostro</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="llocweb/img/La última causa perdida.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>La última causa perdida</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="llocweb/img/Las sombras de Quirke.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Las sombras de Quirke</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="llocweb/img/Muerte en mar abierto.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Muerte en mar abierto</h3>
+                        </header>
+                    </div>   
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="llocweb/img/Pista negra.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Pista negra</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="llocweb/img/Restos mortales.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Restos mortales</h3>
+                        </header>
+                    </div>   
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="llocweb/img/Roseanna.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Roseanna</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="llocweb/img/Todo Marlowe.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Todo Marlowe</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="llocweb/img/El halcón maltés.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>El halcón maltés</h3>
+                        </header>
+                    </div>    
+                </div>
+            </section>
+
+            <section id="#Autores">
+                <h3>Autores más vendidos</h3>
+                <div class="container">
+                    <div class="card_autores">
+                        <div class="autores_img">
+                            <img src="llocweb/img/(1) Autor_ Antonio Manzini.jpg">
+                        </div>
+                        <header>
+                            <h3>Antonio Manzini</h3>
+                            <blockquote>"Yo soy actor, guionista y dramaturgo, y el hecho de interpretar me enseñó a trabajar con las palabras y a percibir su efecto en el público, me enseñó a vivir las historias desde dentro, me enseñó a construir personajes y me enseñó a detectar los nudos y los giros de cada relato".
+                            </blockquote>
+                        </header>
+                    </div>
+
+                    <div class="card_autores">
+                        <div class="autores_img">
+                            <img src="llocweb/img/(2) Autor_ Benjamin Black.jpg">
+                        </div>
+                        <header>
+                            <h3>Benjamin Black</h3>
+                            <blockquote>"Siempre he vivido aislado. Me encanta. Como dijo un amigo también escritor, llevo esperando esto toda mi vida. Me gusta el silencio a mi alrededor".
+                            </blockquote>
+                        </header>
+                    </div>
+
+                    <div class="card_autores">
+                        <div class="autores_img">
+                            <img src="llocweb/img/(3) Autora_ Donna Leon.jpg">
+                        </div>
+                        <header>
+                            <h3>Donna Leon</h3>
+                            <blockquote>"La capacidad de hablar, tienes la imagen en la cabeza y la explicas. Por el lenguaje transmitimos ideas, conceptos, es algo mágico".
+                            </blockquote>
+                        </header>
+                    </div>
+                </div>
+            </section>
+        
+    </main>
+    <footer id="#xxss">
+            <h3>xxss</h3>
+            <div class="container">
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Instagram</a></p>
+                <p><a href="#">Email</a></p>
+            </div>
+    </footer>
+</body>
+</html>
